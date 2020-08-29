@@ -5,8 +5,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-       <div className="firstline">Sweasd asdasd asdasdasd asdadsasd</div>
-      </header>
+       <div className="firstline">Bill gates <br /> Obama <br />   </div>
+      
+       <div className="secondline">Gay frogs <br /> Vaccines   </div>
+     
+       <div className="thirdline">Other stuff <br /> things   </div>
+       <button>Spin!</button>
+      </header> 
+     
     </div>
   );
 }
