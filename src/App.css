@@ -8,25 +8,25 @@
   
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+}
+.title {
+  position: absolute;
+  top: 0
 }
 .textcontainer {
   align-items: center;
-  width: 25rem;
+ 
 }
 .firstline {
  margin: 1rem;
- background-color: blue;
  font-size: 3rem;
 }
 .secondline {
  margin: 1rem;
- background-color: green;
  font-size: 3rem;
 }
 .thirdline {
   margin: 1rem;
-  background-color: firebrick;
   font-size: 3rem;
 }

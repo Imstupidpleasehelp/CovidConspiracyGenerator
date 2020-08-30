@@ -4,16 +4,16 @@ class SlotMachine extends Component {
     constructor(props) {
       super(props);
       this.state = {
-        first: ["1", "2", "3", "4", "5", "6"],
-        second: ["1", "2", "3", "4", "5", "6"],
-        third: ["1", "2", "3", "4", "5" ,"6"]
+        first: ["Bill Gates", "Donald Trump", "Obama", "The Lizard People", "The Illuminatnti", "The Freemasons", "Mask Manufactors", "Aliens", "Elon Musk", "Jeff Besos", "CNN", "The W.H.O.", "Alex Jones"],
+        second: ["created Corona Virus in order ", "released Covid-19 ", "created Covid-19", "bought Covid-19 from Wuhan", "created Covid-19", "ate bat soup"],
+        third: ["to destroy America", "to make billions", "to turn the frogs gay", "to prepare for covid-20", " to depopulate the Earth" ,"to colonize Mars", "to put a microchip in everyone"]
       };
      
            
     
     }
     randomnum()  {
-        let num = Math.floor(Math.random() * 5) + 0
+        let num = Math.floor(Math.random() * 7) + 0
         console.log(num)
         return num
       }
