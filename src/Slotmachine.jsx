@@ -8,20 +8,25 @@ class SlotMachine extends Component {
         second: ["2nd", "endasd", "aasdasdsad"],
         third: ["23erd", "popsilcles", "peoepe"]
       };
-    }
-   
-
-componentDidMount() {
+     
+           
     
-        let num = Math.floor(Math.random() * 10 + 1);
-    console.log(num)
+    }
+    randomnum()  {
+        let num = Math.floor(Math.random() * 6) + 1  
+        console.log(num)
+        return num
+      }
+componentDidMount() {
+    this.randomnum();
 }
+
     
   render() {
     return (
       <div className="textcontainer">
         <div className="firstline">
-
+{this.state.first[this.randomnum]}
         </div>
 
         <div className="secondline">
