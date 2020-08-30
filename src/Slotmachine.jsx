@@ -4,16 +4,16 @@ class SlotMachine extends Component {
     constructor(props) {
       super(props);
       this.state = {
-        first: ["weewew", "ass", "Twevle"],
-        second: ["2nd", "endasd", "aasdasdsad"],
-        third: ["23erd", "popsilcles", "peoepe"]
+        first: ["1", "2", "3", "4", "5", "6"],
+        second: ["1", "2", "3", "4", "5", "6"],
+        third: ["1", "2", "3", "4", "5" ,"6"]
       };
      
            
     
     }
     randomnum()  {
-        let num = Math.floor(Math.random() * 2) + 1  
+        let num = Math.floor(Math.random() * 5) + 0
         console.log(num)
         return num
       }
@@ -30,11 +30,11 @@ componentDidMount() {
         </div>
 
         <div className="secondline">
-          2nd
+         {this.state.second[this.randomnum()]}
         </div>
 
         <div className="thirdline">
-          3rd
+       {this.state.third[this.randomnum()]}
         </div>
       </div>
     );
