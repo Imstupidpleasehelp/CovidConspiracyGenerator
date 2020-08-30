@@ -11,12 +11,22 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.textcontainer {
+  align-items: center;
+  width: 25rem;
+}
 .firstline {
-text-align: left; margin: 1rem;
+ margin: 1rem;
+ background-color: blue;
+ font-size: 3rem;
 }
 .secondline {
-text-align: center; margin: 1rem;
+ margin: 1rem;
+ background-color: green;
+ font-size: 3rem;
 }
 .thirdline {
-  text-align: right; margin: 1rem;
+  margin: 1rem;
+  background-color: firebrick;
+  font-size: 3rem;
 }
