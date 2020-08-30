@@ -13,7 +13,7 @@ class SlotMachine extends Component {
     
     }
     randomnum()  {
-        let num = Math.floor(Math.random() * 6) + 1  
+        let num = Math.floor(Math.random() * 2) + 1  
         console.log(num)
         return num
       }
@@ -26,15 +26,15 @@ componentDidMount() {
     return (
       <div className="textcontainer">
         <div className="firstline">
-{this.state.first[this.randomnum]}
+{this.state.first[this.randomnum()]}
         </div>
 
         <div className="secondline">
-          Gay frogs 
+          2nd
         </div>
 
         <div className="thirdline">
-          Other stuff 
+          3rd
         </div>
       </div>
     );
