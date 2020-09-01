@@ -35,6 +35,8 @@
   position: absolute;
   bottom: 0;
   margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 .dropdown {
   cursor: pointer;
