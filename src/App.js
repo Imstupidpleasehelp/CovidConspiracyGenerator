@@ -4,14 +4,16 @@ import SlotMachine from './Slotmachine';
 import { Title } from './title';
 import { Why } from './Why';
 
+import { Container} from 'react-bootstrap';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Container className="App-header">
         <Title />
+        
        <SlotMachine />
        <Why />
-      </header> 
+      </Container> 
      
     </div>
   );

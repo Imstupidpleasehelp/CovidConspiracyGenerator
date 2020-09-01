@@ -11,12 +11,12 @@
   color: white;
 }
 .title {
+  top:  0;
   position: absolute;
-  top: 0
 }
 .textcontainer {
   align-items: center;
- 
+ position: absolute;
 }
 .firstline {
  margin: 1rem;
@@ -29,4 +29,16 @@
 .thirdline {
   margin: 1rem;
   font-size: 3rem;
+}
+.opened {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2rem;
+}
+.dropdown {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2rem;
 }
