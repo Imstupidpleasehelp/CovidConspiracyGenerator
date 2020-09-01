@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import SlotMachine from './Slotmachine';
 import { Title } from './title';
+import { Why } from './Why';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <header className="App-header">
         <Title />
        <SlotMachine />
+       <Why />
       </header> 
      
     </div>
