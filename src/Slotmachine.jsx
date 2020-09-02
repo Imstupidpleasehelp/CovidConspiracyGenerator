@@ -9,14 +9,9 @@ const changepage = {
     opacity: 0,
   },
 };
-const pagetransition = {
-  duration: 1.5,
-};
-
 class SlotMachine extends Component {
   constructor(props) {
     super(props);
-    let timer = null;
     this.state = {
       first: [
         "Bill Gates",
@@ -76,7 +71,6 @@ class SlotMachine extends Component {
           animate="in"
           exit="out"
           variants={changepage}
-          transition={pagetransition}
           className="textcontainer"
         >
           <div className="firstline">{this.state.first[this.randomnum()]}</div>
@@ -87,7 +81,7 @@ class SlotMachine extends Component {
 
           <div className="thirdline">{this.state.third[this.randomnum()]}</div>
         </motion.Container>
-        <Button onClick={setTimeout(() => window.location.reload(false), 4000), clearTimeout()}>Spin</Button>
+        <Button className="spinbutton" onClick={()=>{setTimeout(() => window.location.reload(false), 3000); clearTimeout()}}>aaaa</Button>
       </Container>
     );
   }
