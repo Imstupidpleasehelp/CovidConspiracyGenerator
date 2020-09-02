@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { motion } from "framer-motion"
 import { Button, Container } from 'react-bootstrap';
 class SlotMachine extends Component {
     constructor(props) {
@@ -13,7 +13,7 @@ class SlotMachine extends Component {
            
     
     }
-  
+    
     randomnum()  {
         let num = Math.floor(Math.random() * 9) + 0
         console.log(num)
@@ -38,7 +38,7 @@ componentDidMount() {
         <div className="thirdline">
        {this.state.third[this.randomnum()]}
         </div>
-        <Button onClick={() => window.location.reload(false)}>Click to reload!</Button>
+        <Button onClick={setTimeout(() => window.location.reload(false), 4000), clearTimeout()}>Click to reload!</Button>
       </Container>
     );
   }
