@@ -12,6 +12,9 @@ const changepage = {
 const pagetransition = {
   duration: 1.5,
 };
+const timer = (
+  setTimeout(() => {window.location.reload(false)}, 3000, () => clearInterval(timer))
+)
 class SlotMachine extends Component {
   constructor(props) {
     super(props);
@@ -53,16 +56,16 @@ class SlotMachine extends Component {
         "to make everyone stay home",
       ],
     };
+    
   }
-
+  
   randomnum() {
     let num = Math.floor(Math.random() * 9) + 0;
     console.log(num);
-    return num;
+    return num
   }
-  clearAlert() {
-    clearTimeout();
-  }
+  
+
   componentDidMount() {
     this.randomnum();
   }
@@ -87,13 +90,8 @@ class SlotMachine extends Component {
           <div className="thirdline">{this.state.third[this.randomnum()]}</div>
         </motion.Container>
         <Button className="reloadbutton"
-          onClick={setTimeout(
-            () => window.location.reload(false),
-            4000,
-            clearTimeout()
-            
-          )}
-        >
+          onClick={ this.timer}
+        > 
           Click to reload!
         </Button>
       </Container>
