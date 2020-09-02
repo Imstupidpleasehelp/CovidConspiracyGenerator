@@ -16,7 +16,6 @@
 }
 .textcontainer {
   align-items: center;
- position: absolute;
 }
 .firstline {
  margin: 1rem;
@@ -43,4 +42,7 @@
   position: absolute;
   bottom: 0;
   margin-bottom: 2rem;
+}
+.reloadbutton {
+  position: absolute;
 }
