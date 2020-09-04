@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, Container } from "react-bootstrap";
-
+import { First } from "react-bootstrap/esm/PageItem";
 class SlotMachine extends Component {
   constructor(props) {
     super(props);
@@ -46,36 +46,34 @@ class SlotMachine extends Component {
 
   randomnum() {
     let num = Math.floor(Math.random() * 9) + 0;
-    
+
     return num;
   }
-move() {
-  console.log('it worked')
-}
+
   componentDidMount() {
     this.randomnum();
   }
-  
 
   render() {
     return (
-      <Container>
-        <Container
-         
-          className="textcontainer"
-        >
-          <div className="firstline">{this.state.first[this.randomnum()]}</div>
-
-          <div className="secondline">
-            {this.state.second[this.randomnum()]}
-          </div>
-
-          <div className="thirdline">{this.state.third[this.randomnum()]}</div>
-        </Container>
-        <Button className="spinbutton" onClick={()=>{setTimeout(() =>  window.location.reload(false), 3000); clearTimeout()}}>aaaa</Button>
-      </Container>
+      <div>
+        <div className="">
+          {this.state.first.map((first) => (
+            <div className="">{first}</div>
+          ))}
+        </div>
+        <div className="">
+          {this.state.second.map((second) => (
+            <div className="">{second}</div>
+          ))}
+        </div>
+        <div className="">
+          {this.state.third.map((third) => (
+            <div className="">{third}</div>
+          ))}
+        </div>
+      </div>
     );
   }
 }
-
 export default SlotMachine;
