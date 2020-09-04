@@ -1,14 +1,6 @@
 import React, { Component } from "react";
-import { motion } from "framer-motion";
 import { Button, Container } from "react-bootstrap";
-const changepage = {
-  in: {
-    opacity: 1,
-  },
-  out: {
-    opacity: 0,
-  },
-};
+
 class SlotMachine extends Component {
   constructor(props) {
     super(props);
@@ -54,10 +46,12 @@ class SlotMachine extends Component {
 
   randomnum() {
     let num = Math.floor(Math.random() * 9) + 0;
-    console.log(num);
+    
     return num;
   }
-
+move() {
+  console.log('it worked')
+}
   componentDidMount() {
     this.randomnum();
   }
@@ -66,11 +60,8 @@ class SlotMachine extends Component {
   render() {
     return (
       <Container>
-        <motion.Container
-          initial="out"
-          animate="in"
-          exit="out"
-          variants={changepage}
+        <Container
+         
           className="textcontainer"
         >
           <div className="firstline">{this.state.first[this.randomnum()]}</div>
@@ -80,8 +71,8 @@ class SlotMachine extends Component {
           </div>
 
           <div className="thirdline">{this.state.third[this.randomnum()]}</div>
-        </motion.Container>
-        <Button className="spinbutton" onClick={()=>{setTimeout(() => window.location.reload(false), 3000); clearTimeout()}}>aaaa</Button>
+        </Container>
+        <Button className="spinbutton" onClick={()=>{setTimeout(() =>  window.location.reload(false), 3000); clearTimeout()}}>aaaa</Button>
       </Container>
     );
   }
