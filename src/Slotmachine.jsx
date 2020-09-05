@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Button } from "react-bootstrap";
 class SlotMachine extends Component {
   constructor(props) {
     super(props);
@@ -36,8 +37,8 @@ class SlotMachine extends Component {
         "to make billions",
         "to turn the frogs gay",
         "to prepare for covid-20",
-        " to depopulate the Earth",
-        "to colonize Mars",
+        "to depopulate the Earth",
+        "so we have to colonize Mars",
         "to put a microchip in everyone",
         "to force everyone to use 5G",
         "to make everyone stay home",
@@ -61,21 +62,21 @@ class SlotMachine extends Component {
   render() {
     return (
       <div>
-        <div className="">
+        <div className="conspiracy">
         {this.state.first[this.state.firstIndex]}
           
         </div>
         <div className="">
           
-            <div className="">{this.state.second[this.state.secondIndex]}</div>
+            <div className="conspiracy">{this.state.second[this.state.secondIndex]}</div>
           
         </div>
         <div className="">
           
-            <div className="">{this.state.third[this.state.thirdIndex]}</div>
+            <div className="conspiracy">{this.state.third[this.state.thirdIndex]}</div>
          
         </div>
-        <button onClick={this.randomnum}>spin</button>
+        <button className="button b-red" onClick={this.randomnum}>Spin!</button>
       </div>
     );
   }
