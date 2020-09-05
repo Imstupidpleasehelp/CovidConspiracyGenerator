@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { Button, Container } from "react-bootstrap";
-import { First } from "react-bootstrap/esm/PageItem";
 class SlotMachine extends Component {
   constructor(props) {
     super(props);
@@ -20,7 +18,7 @@ class SlotMachine extends Component {
         "Alex Jones",
       ],
       second: [
-        "created Corona Virus  ",
+        "created Corona Virus",
         "released Covid-19 ",
         "created Covid-19",
         "bought Covid-19 from Wuhan",
@@ -41,6 +39,9 @@ class SlotMachine extends Component {
         "to force everyone to use 5G",
         "to make everyone stay home",
       ],
+      firstIndex: 0,
+      secondIndex: 0,
+      thirdIndex: 0
     };
   }
 
@@ -58,19 +59,18 @@ class SlotMachine extends Component {
     return (
       <div>
         <div className="">
-          {this.state.first.map((first) => (
-            <div className="">{first}</div>
-          ))}
+        {this.state.first[this.state.firstIndex]}
+          
         </div>
         <div className="">
-          {this.state.second.map((second) => (
-            <div className="">{second}</div>
-          ))}
+          
+            <div className="">{this.state.second[this.state.secondIndex]}</div>
+          
         </div>
         <div className="">
-          {this.state.third.map((third) => (
-            <div className="">{third}</div>
-          ))}
+          
+            <div className="">{this.state.third[this.state.thirdIndex]}</div>
+         
         </div>
       </div>
     );
