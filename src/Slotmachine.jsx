@@ -4,6 +4,7 @@ class SlotMachine extends Component {
     super(props);
     this.state = {
       first: [
+        "Spin ",
         "Bill Gates",
         "Donald Trump",
         "Obama",
@@ -18,6 +19,7 @@ class SlotMachine extends Component {
         "Alex Jones",
       ],
       second: [
+        "to see",
         "created Corona Virus",
         "released Covid-19 ",
         "created Covid-19",
@@ -29,6 +31,7 @@ class SlotMachine extends Component {
         "bought covid-19 from aliens",
       ],
       third: [
+        "the truth!",
         "to destroy America",
         "to make billions",
         "to turn the frogs gay",
@@ -45,15 +48,15 @@ class SlotMachine extends Component {
     };
   }
 
-  randomnum() {
-    let num = Math.floor(Math.random() * 9) + 0;
-
-    return num;
+  randomnum = () => {
+    let num = Math.floor(Math.random() * 9) + 1;
+    console.log(num)
+    this.setState({firstIndex: num});
+    this.setState({secondIndex: num});
+    this.setState({thirdIndex: num});
   }
 
-  componentDidMount() {
-    this.randomnum();
-  }
+ 
 
   render() {
     return (
@@ -72,6 +75,7 @@ class SlotMachine extends Component {
             <div className="">{this.state.third[this.state.thirdIndex]}</div>
          
         </div>
+        <button onClick={this.randomnum}>spin</button>
       </div>
     );
   }

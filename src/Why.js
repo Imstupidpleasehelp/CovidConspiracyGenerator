@@ -5,7 +5,7 @@ export const Why = () => (
   <Collapsible
     className="dropdown"
     openedClassName="opened"
-    trigger="Start here"
+    trigger="Why did I make this?"
     triggerStyle={{ color: "red" }}
   >
     <p>
