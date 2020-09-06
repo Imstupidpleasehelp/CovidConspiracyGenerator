@@ -13,13 +13,17 @@
 .title {
   top:  0;
   position: absolute;
+  font-size: 2rem;
+  border-bottom: 3px solid white;
+  width: 100%;
 }
 .textcontainer {
   align-items: center;
 } 
 .conspiracy{
   margin: 1rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  position: relative;
 }
 .opened {
   cursor: pointer;
@@ -28,6 +32,9 @@
   margin-bottom: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;
+}
+.opentext {
+  background-color: #282c34;
 }
 .dropdown {
   cursor: pointer;

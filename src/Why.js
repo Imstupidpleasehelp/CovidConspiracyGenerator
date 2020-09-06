@@ -6,9 +6,9 @@ export const Why = () => (
     className="dropdown"
     openedClassName="opened"
     trigger="Why did I make this?"
-    triggerStyle={{ color: "red" }}
+    triggerStyle={{ color: "white", fontSize: '2rem', backgroundColor: 'darkcyan', margin: 15  }}
   >
-    <p>
+    <p className="opentext">
       Working at a grocery store during the covid crisis I was on the front
       lines of not only being exposed to the virus, but being exposed to the
       latest conspiracy theories as well. So I made this, to illustrate the
